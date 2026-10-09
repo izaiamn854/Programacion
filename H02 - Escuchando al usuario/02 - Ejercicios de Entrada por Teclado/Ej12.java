@@ -21,5 +21,7 @@ public class Ej12 {
         nota2 = (notaT - (nota1 * 0.4f))/0.6f;
 
         System.out.printf("Para sacar un %.2f en el trimestre necesitas sacar un %.2f en el segundo examen.",notaT ,nota2);
+        
+        entrada.close();
     }
 }

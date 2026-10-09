@@ -21,5 +21,7 @@ public class Ej11 {
         base = entrada.nextFloat();
 
         System.out.printf("El volumen del cono es de %f",1f/3f * Math.PI * base * base*altura);
+
+        entrada.close();
     }
 }

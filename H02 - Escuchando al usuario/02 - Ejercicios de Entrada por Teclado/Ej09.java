@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Locale;
 
-public class eJ09 {
+public class Ej09 {
     public static void main(String[] args) {
         float X;
         float Y;
