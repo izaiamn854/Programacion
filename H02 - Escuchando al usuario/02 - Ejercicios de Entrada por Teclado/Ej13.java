@@ -9,6 +9,9 @@ public class Ej13 {
 
         Scanner entrada = new Scanner(System.in);
 
+        System.out.println("Conversor de tiempo");
+        System.out.println("-------------------");
+
         System.out.print("Introduzca una cantidad en segundos: ");
         segundos = entrada.nextInt();
         
@@ -17,7 +20,7 @@ public class Ej13 {
         horas = minutos / 60;
         minutos = minutos % 60;
         
-        System.err.printf("%d segundos son %d horas, %d minutos y %d segundos",segundos , horas, minutos, restoSegundos);
+        System.out.printf("%d segundos son %d horas, %d minutos y %d segundos",segundos , horas, minutos, restoSegundos);
 
         entrada.close();
     }
