@@ -7,6 +7,7 @@ public class Ej04 {
 
         Scanner entrada = new Scanner(System.in);
 
+        System.out.println("El programa resuelve ecuaciones de primer grado del tipo ax + b = 0");
         System.out.print("Introducir valor de a: ");
         a = entrada.nextFloat();
 
