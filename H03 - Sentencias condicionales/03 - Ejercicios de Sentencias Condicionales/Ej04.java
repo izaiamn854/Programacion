@@ -21,6 +21,8 @@ public class Ej04 {
         } else {
             System.out.printf("x = %.1f",-b/a);
         }
+        
+        entrada.close();
     }
     
 }
