@@ -5,6 +5,6 @@ public class Convertor {
         float euros;
 
         System.out.print("Introduzca la cantidad de euros que quiere convertir: ");
-        euros = Float.parseFloat(null)
+        euros = Float.parseFloat(null);
     }
 }
