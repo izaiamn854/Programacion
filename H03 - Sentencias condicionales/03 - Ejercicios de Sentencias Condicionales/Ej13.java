@@ -20,25 +20,25 @@ public class Ej13 {
         System.out.println();
         System.out.println("La pirámide es:");
         if (tipoPiramide == 1) {
-            System.out.printf("%3s%n",String.valueOf(rellenoPiramide).repeat(1));
-            System.out.printf("%4s%n",String.valueOf(rellenoPiramide).repeat(3));
-            System.out.printf("%s%n",String.valueOf(rellenoPiramide).repeat(5));
+            System.out.printf("%3s%n", String.valueOf(rellenoPiramide).repeat(1));
+            System.out.printf("%4s%n", String.valueOf(rellenoPiramide).repeat(3));
+            System.out.printf("%s%n", String.valueOf(rellenoPiramide).repeat(5));
         } else if (tipoPiramide == 2) {
-            System.out.printf("%s%n",String.valueOf(rellenoPiramide).repeat(5));
-            System.out.printf("%4s%n",String.valueOf(rellenoPiramide).repeat(3));
-            System.out.printf("%3s%n",String.valueOf(rellenoPiramide).repeat(1));
+            System.out.printf("%s%n", String.valueOf(rellenoPiramide).repeat(5));
+            System.out.printf("%4s%n", String.valueOf(rellenoPiramide).repeat(3));
+            System.out.printf("%3s%n", String.valueOf(rellenoPiramide).repeat(1));
         } else if (tipoPiramide == 3) {
-            System.out.printf("%3s%n",String.valueOf(rellenoPiramide).repeat(1));
-            System.out.printf("%3s%n",String.valueOf(rellenoPiramide).repeat(2));
-            System.out.printf("%s%n",String.valueOf(rellenoPiramide).repeat(3));
-            System.out.printf("%3s%n",String.valueOf(rellenoPiramide).repeat(2));
-            System.out.printf("%3s%n",String.valueOf(rellenoPiramide).repeat(1));
+            System.out.printf("%3s%n", String.valueOf(rellenoPiramide).repeat(1));
+            System.out.printf("%3s%n", String.valueOf(rellenoPiramide).repeat(2));
+            System.out.printf("%s%n", String.valueOf(rellenoPiramide).repeat(3));
+            System.out.printf("%3s%n", String.valueOf(rellenoPiramide).repeat(2));
+            System.out.printf("%3s%n", String.valueOf(rellenoPiramide).repeat(1));
         } else if (tipoPiramide == 4) {
-            System.out.printf("%s%n",String.valueOf(rellenoPiramide).repeat(1));
-            System.out.printf("%s%n",String.valueOf(rellenoPiramide).repeat(2));
-            System.out.printf("%s%n",String.valueOf(rellenoPiramide).repeat(3));
-            System.out.printf("%s%n",String.valueOf(rellenoPiramide).repeat(2));
-            System.out.printf("%s%n",String.valueOf(rellenoPiramide).repeat(1));
+            System.out.printf("%s%n", String.valueOf(rellenoPiramide).repeat(1));
+            System.out.printf("%s%n", String.valueOf(rellenoPiramide).repeat(2));
+            System.out.printf("%s%n", String.valueOf(rellenoPiramide).repeat(3));
+            System.out.printf("%s%n", String.valueOf(rellenoPiramide).repeat(2));
+            System.out.printf("%s%n", String.valueOf(rellenoPiramide).repeat(1));
         }
         src.close();
     }
