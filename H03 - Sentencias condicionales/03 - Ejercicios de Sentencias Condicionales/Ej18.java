@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ej18 {
     public static final String NEGRITA = "\033[0;1m";
     public static final String RESET = "\033[0m";
