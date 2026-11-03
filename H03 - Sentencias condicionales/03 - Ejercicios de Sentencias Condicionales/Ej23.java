@@ -29,17 +29,17 @@ public class Ej23 {
     precioFinal = 0.01f * cmCuadrados;
 
     System.out.println("Gracias. Aquí tiene el desgloce de su compra.");
-    System.out.printf("Bandera de %d cm²:%2.2f €\n", cmCuadrados, precioFinal);
+    System.out.printf("Bandera de %d cm²:%5.2f €\n", cmCuadrados, precioFinal);
     if (opcion == 's') {
-        System.out.printf("Con escudo:%5.2f €\n",PRECIO_ESCUDO_BORDADO);
+        System.out.printf("Con escudo:%13.2f €\n",PRECIO_ESCUDO_BORDADO);
         precioFinal += PRECIO_ESCUDO_BORDADO;
     } else if (opcion == 'n') {
-        System.out.printf("Sin escudo:%5.2f €\n",0f);
+        System.out.printf("Sin escudo:%13.2f €\n",0f);
     }
 
     precioFinal += PRECIO_ENVIO;
-    System.out.printf("Gastos de envío:%5.2f €\n",PRECIO_ENVIO);
+    System.out.printf("Gastos de envío:%8.2f €\n",PRECIO_ENVIO);
 
-    System.out.printf("%sTotal:%8.2f €%s",NEGRITA_FONDO_GRIS,precioFinal,RESET);
+    System.out.printf("%sTotal:%18.2f €%s",NEGRITA_FONDO_GRIS,precioFinal,RESET);
     }
 }
