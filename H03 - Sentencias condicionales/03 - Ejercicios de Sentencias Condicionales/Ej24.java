@@ -27,39 +27,39 @@ public class Ej24 {
         System.out.println("Aquí tiene sus entradas. Gracias por su compra.");
         switch (dia) {
             case "miercoles":
-                System.out  .printf("Entradas individuales%d\n", numeroEntradas);
-                System.out.printf("Precio por entrada individual%.2f €\n",PRECIO_MIERCOLES);
+                System.out  .printf("Entradas individuales%13d\n", numeroEntradas);
+                System.out.printf("Precio por entrada individual%8.2f €\n",PRECIO_MIERCOLES);
                 precioTotal = PRECIO_MIERCOLES * numeroEntradas;
                 break;
             case "jueves":
                 numeroImpares = numeroEntradas % 2;
                 numeroEntradas /= 2;
 
-                System.out.printf("Entradas de pareja%d\n", numeroEntradas);
+                System.out.printf("Entradas de pareja%16d\n", numeroEntradas);
                 if(numeroImpares == 1){
-                    System.out.printf("Entradas individuales%d\n", numeroImpares);
+                    System.out.printf("Entradas individuales%13d\n", numeroImpares);
                 }
-                System.out.printf("Precio por entrada pareja%.2f €\n",PRECIO_PAREJA);
+                System.out.printf("Precio por entrada pareja%12.2f €\n",PRECIO_PAREJA);
                 if(numeroImpares == 1){
-                    System.out.printf("Precio por entrada individual%.2f €\n",PRECIO_ENTRADA);
+                    System.out.printf("Precio por entrada individual%8.2f €\n",PRECIO_ENTRADA);
                     precioTotal = PRECIO_ENTRADA;
                 }
                 precioTotal = precioTotal + (PRECIO_PAREJA * numeroEntradas);
                 break;
             default:
-                System.out  .printf("Entradas individuales%d\n", numeroEntradas);
-                System.out.printf("Precio por entrada individual%.2f €\n",PRECIO_ENTRADA);
+                System.out  .printf("Entradas individuales%13d\n", numeroEntradas);
+                System.out.printf("Precio por entrada individual%8.2f €\n",PRECIO_ENTRADA);
                 precioTotal = PRECIO_ENTRADA * numeroEntradas;
                 break;
         }
 
-        System.out.printf("total%.2f\n", precioTotal);
+        System.out.printf("total%32.2f\n", precioTotal);
         if (tarjetaCineCampa == 's'){
             descuentoTotal = DESCUENTO * precioTotal;
         }
-        System.out.printf("Descuento %.2\nf", descuentoTotal);
+        System.out.printf("Descuento %27.2f\n", descuentoTotal);
         precioTotal = precioTotal - descuentoTotal;
-        System.out.printf("A pagar %.2f\n", precioTotal);
+        System.out.printf("A pagar %29.2f\n", precioTotal);
 
         sc.close();
     }
