@@ -18,6 +18,8 @@ public class Main {
             mostrarvector(semana);
 
             System.out.printf("La media es %.2f",media(semana));
+            System.out.printf("Temperatura minima: %.2f", minima(semana));
+            System.out.printf("Temperatura maxima: %.2f", maxima(semana));
         }catch(InputMismatchException ime){
             System.out.println("**Error**");
         }
@@ -46,4 +48,21 @@ public static float media(float[] vector){
         media += vector[i];
     }
     return media/vector.length;
+}
+public static float minima(float[] vector){
+    float minimo = vector[0];
+
+    for(int i = 0; i < vector.length; i++){
+        if(vector[i] < minimo){
+            minimo = vector[i];
+        }
+    }
+}
+public static float maxima(float[] vector){
+    float maximo = vector[0];
+    for(int i = 0; i < vector.length; i++){
+        if(vector[i] > maximo){
+            maximo = vector[i];
+        }
+    }
 }
