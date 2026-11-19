@@ -1,4 +1,6 @@
-package Clases;
+package clases;
+
+import java.text.Format;
 
 public class Investigador extends Personaje{
     private int cargas;
@@ -7,7 +9,7 @@ public class Investigador extends Personaje{
     private int cantidadFantasmasCapturados;
     private static final int ENERGIA = 100;
 
-    Investigador(String nombre){
+    public Investigador(String nombre){
         super(nombre,ENERGIA);
         this.cantidadFantasmasCapturados = 0;
         this.puntuacion = 0;
@@ -16,17 +18,17 @@ public class Investigador extends Personaje{
     }
 
     public int getCargas() {
-        return cargas;
+        return this.cargas;
     }
 
     public int getBotiquines() {
-        return botiquines;
+        return this.botiquines;
     }
     public int getPuntuacion() {
-        return puntuacion;
+        return this.puntuacion;
     }
     public int getCantidadFantasmasCapturados() {
-        return cantidadFantasmasCapturados;
+        return this.cantidadFantasmasCapturados;
     }
     public void recargar(int cantidad){
         if(cantidad >= 0){
@@ -80,7 +82,27 @@ public class Investigador extends Personaje{
 
     @Override
     public String toString() {
-        String MARCO_ARRIBA= "╔══════════════════════"
-        return super.toString();
+        String totalCorazones = "";
+        String CORAZON = "\033[31m♥\033[0m";
+        char COCRAZON_VACIO = '·';
+
+        for (int i =1 ; i < 11; i++){
+            if(i  <= super.getEnergia() * 100 / super.getEnergiaMaxima()){
+                totalCorazones += CORAZON;
+            } else {
+                totalCorazones += COCRAZON_VACIO;
+            }
+
+        }
+
+        String MARCO_ARRIBA = "╔═════════════════════════════════╗\n";
+        String energia = String.format("║ Energía:             %s ║\n", totalCorazones);
+        String cargas = String.format("║ Cargas disponibles:      %06d ║\n",this.getCargas());
+        String botiquines = String.format("║ Botiquines:              %06d ║\n",this.getBotiquines());
+        String puntuacion = String.format("║ Puntuacion:              %06d ║\n",this.getPuntuacion());
+        String capturado = String.format("║ Fantasmas capturados:    %06d ║\n",this.getCantidadFantasmasCapturados());
+        String MARCO_ABAJO = "╚═════════════════════════════════╝\n";
+
+        return MARCO_ARRIBA + energia + cargas + botiquines + puntuacion + capturado + MARCO_ABAJO;
     }
 }

@@ -1,4 +1,4 @@
-package Clases;
+package clases;
 
 public class Personaje {
     private String nombre;
@@ -21,29 +21,29 @@ public class Personaje {
         return this.energia;
     }
     public int tirarDado(){
-        String ResultadoDado;
+        String resultadoDado = "";
         int dado;
 
         dado = (int) (Math.random() * 6) + 1;
 
         switch (dado){
             case 1:
-                ResultadoDado = "\u2680";
+                resultadoDado = "\u2680";
                 break;
             case 2:
-                ResultadoDado = "\u2681";
+                resultadoDado = "\u2681";
                 break;
             case 3:
-                ResultadoDado = "\u2682";
+                resultadoDado = "\u2682";
                 break;
             case 4:
-                ResultadoDado = "\u2683";
+                resultadoDado = "\u2683";
                 break;
             case 5:
-                ResultadoDado = "\u2684";
+                resultadoDado = "\u2684";
                 break;
             case 6:
-                ResultadoDado = "\u2685";
+                resultadoDado = "\u2685";
                 break;
         }
         System.out.printf("%s",resultadoDado);
