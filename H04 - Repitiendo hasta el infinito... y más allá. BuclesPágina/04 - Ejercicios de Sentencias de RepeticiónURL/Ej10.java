@@ -20,6 +20,8 @@ public class Ej10 {
             }
         }
 
+        System.out.printf("Has introducido %d positivos y %d negativos\n", numerosPositivos, numerosNegativos);
+
         sc.close();
     }
 }
