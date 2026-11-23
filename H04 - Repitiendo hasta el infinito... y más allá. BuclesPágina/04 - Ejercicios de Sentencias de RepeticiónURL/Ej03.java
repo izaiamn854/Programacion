@@ -1,4 +1,4 @@
-public class Ej02 {
+public class Ej03 {
     public static void main(String[] args) {
         int x = 0;
         do {
