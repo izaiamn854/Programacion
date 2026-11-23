@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f54a001-3dfd-463c-8351-e9bea525569c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/H04 - Repitiendo hasta el infinito... y más allá. BuclesPágina/04 - Ejercicios de Sentencias de RepeticiónURL/Ej07.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/H01 - Mostrando Información/H01 - Mostrando Información.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/H02 - Escuchando al usuario/H02 - Escuchando al usuario.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/H04 - Repitiendo hasta el infinito... y más allá. BuclesPágina/04 - Ejercicios de Sentencias de RepeticiónURL/Ej06.java" beforeDir="false" afterPath="$PROJECT_DIR$/H04 - Repitiendo hasta el infinito... y más allá. BuclesPágina/04 - Ejercicios de Sentencias de RepeticiónURL/Ej06.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +120,7 @@
       <workItem from="1795429003481" duration="78000" />
       <workItem from="1795429090911" duration="15000" />
       <workItem from="1795431354539" duration="1126000" />
-      <workItem from="1795432500987" duration="2183000" />
+      <workItem from="1795432500987" duration="2533000" />
     </task>
     <servers />
   </component>
