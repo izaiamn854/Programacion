@@ -1,27 +1,35 @@
 import java.util.Scanner;
 
-public class Ej15{
+public class Ej15 {
     public static void main(String[] args) {
+        int numero1;
+        int numero2;
+        int inicio;
+        int fin;
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Introduce la altura de la pirámide: ");
-        int altura = sc.nextInt();
+        System.out.print("Introduzca un numero entero: ");
+        numero1 = sc.nextInt();
 
-        System.out.print("Introduce el carácter de relleno: ");
-        char relleno = sc.next().charAt(0);
+        System.out.print("Introduzca otro numero distinto al anterior: ");
+        numero2 = sc.nextInt();
 
-        for (int fila = 1; fila <= altura; fila++) {
-            for (int espacio = 1; espacio <= altura - fila; espacio++) {
-                System.out.print(" ");
+        if (numero1 > numero2 || numero2 > numero1) {
+            if (numero1 < numero2) {
+                inicio = numero1;
+                fin = numero2;
+            } else  {
+                inicio = numero2;
+                fin = numero1;
+            }
+            for (int i = inicio; i <= fin; i+=7) {
+                System.out.print(i + " ");
             }
 
-            for (int i = 1; i <= (2 * fila - 1); i++) {
-                System.out.print(relleno);
-            }
-
-            System.out.println();
+        } else if (numero1 == numero2) {
+            System.out.println("Numero no valido, deben ser distintos");
         }
-
         sc.close();
     }
 }

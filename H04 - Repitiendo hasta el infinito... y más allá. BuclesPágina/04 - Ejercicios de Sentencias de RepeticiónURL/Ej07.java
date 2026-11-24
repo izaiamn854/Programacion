@@ -25,5 +25,6 @@ public class Ej07 {
         total /= divisor;
 
         System.out.printf("La media de los números introducidos es %f", total);
+        sc.close();
     }
 }
